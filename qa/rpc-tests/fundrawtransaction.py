@@ -201,9 +201,9 @@ class RawTransactionsTest(BitcoinTestFramework):
 
         try:
             self.nodes[2].fundrawtransaction(rawtx, {'changeAddress': 'foobar'})
-            raise AssertionError("Accepted invalid einsteinium address")
+            raise AssertionError("Accepted invalid testcoin address")
         except JSONRPCException as e:
-            assert("changeAddress must be a valid einsteinium address" in e.error['message'])
+            assert("changeAddress must be a valid testcoin address" in e.error['message'])
 
 
         ############################################################

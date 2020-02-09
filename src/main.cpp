@@ -54,7 +54,7 @@
 using namespace std;
 
 #if defined(NDEBUG)
-# error "Einsteinium cannot be compiled without assertions."
+# error "Testcoin cannot be compiled without assertions."
 #endif
 
 /**
@@ -120,7 +120,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 CScript COINBASE_FLAGS;
 CScript CHARITY_SCRIPT;
 
-const string strMessageMagic = "Einsteinium Signed Message:\n";
+const string strMessageMagic = "Testcoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -241,7 +241,7 @@ namespace {
     std::deque<std::pair<int64_t, MapRelay::iterator>> vRelayExpiration;
 } // anon namespace
 
-char ASSETCHAINS_SYMBOL[65] = { "EMC2" };
+char ASSETCHAINS_SYMBOL[65] = { "TST" };
 #include "komodo_validation013.h"
 
 //////////////////////////////////////////////////////////////////////////////
@@ -1562,7 +1562,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState& state, const C
         // Remove conflicting transactions from the mempool
         BOOST_FOREACH(const CTxMemPool::txiter it, allConflicting)
         {
-            LogPrint("mempool", "replacing tx %s with %s for %s EMC2 additional fees, %d delta bytes\n",
+            LogPrint("mempool", "replacing tx %s with %s for %s TST additional fees, %d delta bytes\n",
                     it->GetTx().GetHash().ToString(),
                     hash.ToString(),
                     FormatMoney(nModifiedFees - nConflictingFees),
@@ -2325,7 +2325,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("einsteinium-scriptch");
+    RenameThread("testcoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2580,7 +2580,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                                block.vtx[0].GetValueOut(), blockReward),
                                REJECT_INVALID, "bad-cb-amount");
 
-    // For Einsteinium also add the protocol rule that the first output in the coinbase must go to the charity address and have at least 2.5% of the subsidy (as per integer arithmetic)
+    // For Testcoin also add the protocol rule that the first output in the coinbase must go to the charity address and have at least 2.5% of the subsidy (as per integer arithmetic)
 
     if (block.vtx[0].vout[0].scriptPubKey != CHARITY_SCRIPT)
         return state.DoS(100, error("ConnectBlock() : coinbase does not pay to the charity in the first output)"));
@@ -3697,7 +3697,7 @@ bool ContextualCheckBlock(const CBlock& block, CValidationState& state, CBlockIn
     {
         if (consensusParams.BIP34Height != -1)
         {
-            // Mainnet - Einsteinium: enforce together with BIP66 because this part was forgotten in the previos code and V1 blocks are being mined, change can be ignored in future
+            // Mainnet - Testcoin: enforce together with BIP66 because this part was forgotten in the previos code and V1 blocks are being mined, change can be ignored in future
             if (IsSuperMajority(3, pindexPrev, consensusParams.nMajorityRejectBlockOutdated, consensusParams))
                 checkHeightMismatch = true;
         }

@@ -65,20 +65,20 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 840000;     // <-- Einsteinium: unused
-        consensus.nMajorityEnforceBlockUpgrade = 1875;  // <-- Einsteinium: 1000 blocks LTC = 2500 blocks EMC2
-        consensus.nMajorityRejectBlockOutdated = 2375;  // <-- Einsteinium: 1000 blocks LTC = 2500 blocks EMC2
-        consensus.nMajorityWindow = 2500;               // <-- Einsteinium: 1000 blocks LTC = 2500 blocks EMC2
-        consensus.BIP34Height = 1;                      // <-- Einsteinium: forgot to update initial code, update after V3 or higher active!!!
-        consensus.BIP34Hash = uint256S("0xd1c175570320d4d6388a4525385b8f20460d340f621cfeebb9824712b9e593c5"); // <-- Einsteinium: used for BIP30 enforcement, set to corresponding BIP34 Height after V3 activation!
+        consensus.nSubsidyHalvingInterval = 840000;     // <-- Testcoin: unused
+        consensus.nMajorityEnforceBlockUpgrade = 1875;  // <-- Testcoin: 1000 blocks LTC = 2500 blocks TST
+        consensus.nMajorityRejectBlockOutdated = 2375;  // <-- Testcoin: 1000 blocks LTC = 2500 blocks TST
+        consensus.nMajorityWindow = 2500;               // <-- Testcoin: 1000 blocks LTC = 2500 blocks TST
+        consensus.BIP34Height = 1;                      // <-- Testcoin: forgot to update initial code, update after V3 or higher active!!!
+        consensus.BIP34Hash = uint256S("0xd1c175570320d4d6388a4525385b8f20460d340f621cfeebb9824712b9e593c5"); // <-- Testcoin: used for BIP30 enforcement, set to corresponding BIP34 Height after V3 activation!
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.CharityPubKey = "1cec44c9f9b769ae08ebf9d694c7611a16edf615"; // EKnqTC9XEuucZEhD3miDGnbJxBptcxhByA
-        consensus.nPowTargetTimespan = 60;  // <-- Einsteinium: OK
-        consensus.nPowTargetSpacing = 60;   // <-- Einsteinium: OK
+        consensus.nPowTargetTimespan = 60;  // <-- Testcoin: OK
+        consensus.nPowTargetSpacing = 60;   // <-- Testcoin: OK
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 15120; // 75% of 20160
-        consensus.nMinerConfirmationWindow = 20160; // <-- Einsteinium: approx. 2 weeks
+        consensus.nMinerConfirmationWindow = 20160; // <-- Testcoin: approx. 2 weeks
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601; // January 1, 2008
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999; // December 31, 2008
@@ -94,46 +94,46 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000c77bc63bfadbd1"); // <-- Einsteinium: OK
+        consensus.nMinimumChainWork = uint256S("00000000000000000000000000000000000000000000000000c77bc63bfadbd1"); // <-- Testcoin: OK
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0xe8;  // <--Einsteinium: OK
-        pchMessageStart[1] = 0xf1;  // <--Einsteinium: OK
-        pchMessageStart[2] = 0xc4;  // <--Einsteinium: OK
-        pchMessageStart[3] = 0xac;  // <--Einsteinium: OK
-        nDefaultPort = 41878;       // <--Einsteinium: OK
+        pchMessageStart[0] = 0xee;  // <--Testcoin: OK
+        pchMessageStart[1] = 0xcb;  // <--Testcoin: OK
+        pchMessageStart[2] = 0x4c;  // <--Testcoin: OK
+        pchMessageStart[3] = 0xca;  // <--Testcoin: OK
+        nDefaultPort = 41826;       // <--Testcoin: OK
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock("NY Times 19/Feb/2014 North Korea Arrests Christian Missionary From Australia", CScript() << OP_DUP << OP_HASH160 << ParseHex("1cec44c9f9b769ae08ebf9d694c7611a16edf615") << OP_EQUALVERIFY << OP_CHECKSIG, 1392841423, 3236648, 0x1e0ffff0, 1, 50 * COIN); // <--Einsteinium: OK
+        genesis = CreateGenesisBlock("NY Times 19/Feb/2014 North Korea Arrests Christian Missionary From Australia", CScript() << OP_DUP << OP_HASH160 << ParseHex("1cec44c9f9b769ae08ebf9d694c7611a16edf615") << OP_EQUALVERIFY << OP_CHECKSIG, 1392841423, 3236648, 0x1e0ffff0, 1, 50 * COIN); // <--Testcoin: OK
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4e56204bb7b8ac06f860ff1c845f03f984303b5b97eb7b42868f714611aed94b")); // <--Einsteinium: OK
-        assert(genesis.hashMerkleRoot == uint256S("0xb3e47e8776012ee4352acf603e6b9df005445dcba85c606697f422be3cc26f9b")); // <--Einsteinium: OK
+        assert(consensus.hashGenesisBlock == uint256S("0x4e56204bb7b8ac06f860ff1c845f03f984303b5b97eb7b42868f714611aed94b")); // <--Testcoin: OK
+        assert(genesis.hashMerkleRoot == uint256S("0xb3e47e8776012ee4352acf603e6b9df005445dcba85c606697f422be3cc26f9b")); // <--Testcoin: OK
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("emc2.foundation", "dnsseeder01.emc2.foundation")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("emc2.foundation", "dnsseeder02.emc2.foundation")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "emc2-seed01.chainworksindustries.com")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "emc2-seed02.chainworksindustries.com")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "emc2-seed03.chainworksindustries.com")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "emc2-seed04.chainworksindustries.com")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "emc2-seed05.chainworksindustries.com")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "emc2-seed06.chainworksindustries.com")); // <--Einsteinium: OK
-        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "emc2-seed07.chainworksindustries.com")); // <--Einsteinium: OK
+//        vSeeds.push_back(CDNSSeedData("tst.foundation", "dnsseeder01.tst.foundation")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("tst.foundation", "dnsseeder02.tst.foundation")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed01.chainworksindustries.com")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed02.chainworksindustries.com")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed03.chainworksindustries.com")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed04.chainworksindustries.com")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed05.chainworksindustries.com")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed06.chainworksindustries.com")); // <--Testcoin: OK
+//        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed07.chainworksindustries.com")); // <--Testcoin: OK
 
-        // Einsteinium: Address encoding P2SH BTC = 5 / LTC NEW = 50 / EMC2 OLD = 5
+        // Testcoin: Address encoding P2SH BTC = 5 / LTC NEW = 50 / TST OLD = 5
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,33);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,55);                                                                         // <-- Einsteinium: different than LTC and BTC!
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);                                                                         // <-- Einsteinium: OK
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,55);                                                                         // <-- Testcoin: different than LTC and BTC!
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);                                                                         // <-- Testcoin: OK
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));  // <-- Einsteinium: Seeder array to be extended
+        vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));  // <-- Testcoin: Seeder array to be extended
 
         fMiningRequiresPeers = true;
         fDefaultConsistencyChecks = false;
@@ -143,16 +143,16 @@ public:
 
     checkpointData = (CCheckpointData) {
         boost::assign::map_list_of
-            (        0, uint256S("0x4e56204bb7b8ac06f860ff1c845f03f984303b5b97eb7b42868f714611aed94b"))  // <--Einsteinium: OK
-            (    14871, uint256S("0x5dedc3dd860f008c717d69b8b00f0476de8bc6bdac8d543fb58c946f32f982fa"))  // <--Einsteinium: OK
-            (    36032, uint256S("0xff37468190b2801f2e72eb1762ca4e53cda6c075af48343f28a32b649512e9a8"))  // <--Einsteinium: OK
-            (    51365, uint256S("0x702b407c68091f3c97a587a8d92684666bb622f6821944424b850964b366e42c"))  // <--Einsteinium: OK
-            (   621000, uint256S("0xe2bf6d219cff9d6d7661b7964a05bfea3128265275c3673616ae71fed7072981"))  // <--Einsteinium: OK
-            (  1410100, uint256S("0xf6736ff2a7743014ab1902e442328f5c9928ce7f4edb2b4fd0130010cb4cebc4")), // <--Einsteinium: OK
-            1494147472, // * UNIX timestamp of last checkpoint block                                     // <--Einsteinium: OK
-            2147811,    // * total number of transactions between genesis and last checkpoint            // <--Einsteinium: OK
+            (        0, uint256S("0x4e56204bb7b8ac06f860ff1c845f03f984303b5b97eb7b42868f714611aed94b"))  // <--Testcoin: OK
+            (    14871, uint256S("0x5dedc3dd860f008c717d69b8b00f0476de8bc6bdac8d543fb58c946f32f982fa"))  // <--Testcoin: OK
+            (    36032, uint256S("0xff37468190b2801f2e72eb1762ca4e53cda6c075af48343f28a32b649512e9a8"))  // <--Testcoin: OK
+            (    51365, uint256S("0x702b407c68091f3c97a587a8d92684666bb622f6821944424b850964b366e42c"))  // <--Testcoin: OK
+            (   621000, uint256S("0xe2bf6d219cff9d6d7661b7964a05bfea3128265275c3673616ae71fed7072981"))  // <--Testcoin: OK
+            (  1410100, uint256S("0xf6736ff2a7743014ab1902e442328f5c9928ce7f4edb2b4fd0130010cb4cebc4")), // <--Testcoin: OK
+            1494147472, // * UNIX timestamp of last checkpoint block                                     // <--Testcoin: OK
+            2147811,    // * total number of transactions between genesis and last checkpoint            // <--Testcoin: OK
                       //   (the tx=... number in the SetBestChain debug.log lines)
-            2000     // * estimated number of transactions per day after checkpoint                      // <--Einsteinium: OK
+            2000     // * estimated number of transactions per day after checkpoint                      // <--Testcoin: OK
             };
     }
 };
@@ -165,16 +165,16 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 840000;     // <-- Einsteinium: unused
-        consensus.nMajorityEnforceBlockUpgrade = 180;   // <-- Einsteinium: quicker on Testnet
-        consensus.nMajorityRejectBlockOutdated = 228;   // <-- Einsteinium: quicker on Testnet
-        consensus.nMajorityWindow = 240;                // <-- Einsteinium: quicker on Testnet
+        consensus.nSubsidyHalvingInterval = 840000;     // <-- Testcoin: unused
+        consensus.nMajorityEnforceBlockUpgrade = 180;   // <-- Testcoin: quicker on Testnet
+        consensus.nMajorityRejectBlockOutdated = 228;   // <-- Testcoin: quicker on Testnet
+        consensus.nMajorityWindow = 240;                // <-- Testcoin: quicker on Testnet
         consensus.BIP34Height = -1;
         consensus.BIP34Hash = uint256S("");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.CharityPubKey = "02bde17927d1340113fa6f795cac7ffee4c9364ba55f7e7b97413b48e69817baa6"; // mjY2nBQ78Ctmoq2AvzM3GcNuJUxRoRziiW
-        consensus.nPowTargetTimespan = 60;  // <-- Einsteinium: OK
-        consensus.nPowTargetSpacing = 60;   // <-- Einsteinium: OK
+        consensus.nPowTargetTimespan = 60;  // <-- Testcoin: OK
+        consensus.nPowTargetSpacing = 60;   // <-- Testcoin: OK
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -194,26 +194,26 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x00"); // <-- Einsteinium: chaeck after wallet update
+        consensus.nMinimumChainWork = uint256S("0x00"); // <-- Testcoin: chaeck after wallet update
 
-        pchMessageStart[0] = 0xfa;  // <--Einsteinium: OK
-        pchMessageStart[1] = 0xa2;  // <--Einsteinium: OK
-        pchMessageStart[2] = 0xf0;  // <--Einsteinium: OK
-        pchMessageStart[3] = 0xc1;  // <--Einsteinium: OK
-        nDefaultPort = 31878;       // <--Einsteinium: OK
+        pchMessageStart[0] = 0xaf;  // <--Testcoin: OK
+        pchMessageStart[1] = 0x2a;  // <--Testcoin: OK
+        pchMessageStart[2] = 0x0f;  // <--Testcoin: OK
+        pchMessageStart[3] = 0x1c;  // <--Testcoin: OK
+        nDefaultPort = 31826;       // <--Testcoin: OK
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock("NY Times 19/Feb/2014 North Korea Arrests Christian Missionary From Australia", CScript() << OP_DUP << OP_HASH160 << ParseHex("1cec44c9f9b769ae08ebf9d694c7611a16edf615") << OP_EQUALVERIFY << OP_CHECKSIG, 1494757042, 2231829, 0x1e0ffff0, 1, 50 * COIN); // <--Einsteinium: OK
+        genesis = CreateGenesisBlock("NY Times 19/Feb/2014 North Korea Arrests Christian Missionary From Australia", CScript() << OP_DUP << OP_HASH160 << ParseHex("1cec44c9f9b769ae08ebf9d694c7611a16edf615") << OP_EQUALVERIFY << OP_CHECKSIG, 1494757042, 2231829, 0x1e0ffff0, 1, 50 * COIN); // <--Testcoin: OK
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xa4271888b5e60092c3e7183a76d454741e9a7a55f2b4afbe574615829e406bee"));   // <--Einsteinium: OK
-        assert(genesis.hashMerkleRoot == uint256S("0xb3e47e8776012ee4352acf603e6b9df005445dcba85c606697f422be3cc26f9b"));   // <--Einsteinium: OK
+        assert(consensus.hashGenesisBlock == uint256S("0xa4271888b5e60092c3e7183a76d454741e9a7a55f2b4afbe574615829e406bee"));   // <--Testcoin: OK
+        assert(genesis.hashMerkleRoot == uint256S("0xb3e47e8776012ee4352acf603e6b9df005445dcba85c606697f422be3cc26f9b"));   // <--Testcoin: OK
 
         vFixedSeeds.clear();
-        vSeeds.clear();
+//        vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("test.emc2.foundation", "dnsseedertest01.emc2.foundation")); //<-- Einsteinium: OK
+//        vSeeds.push_back(CDNSSeedData("test.tst.foundation", "dnsseedertest01.tst.foundation")); //<-- Testcoin: OK
 
-        // Einsteinium: OK
+        // Testcoin: OK
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,111);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -233,11 +233,11 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-                ( 0, uint256S("0xa4271888b5e60092c3e7183a76d454741e9a7a55f2b4afbe574615829e406bee"))  // <--Einsteinium: OK
-                ( 6, uint256S("0x8618a815ad94f918a7d3d4df7ebc4df5f14da1ea25d0eb156b6a32f9621c2ce4")), // <--Einsteinium: OK
-            1494590578,                                                                               // <--Einsteinium: OK
-            7,                                                                                        // <--Einsteinium: OK
-            1500                                                                                      // <--Einsteinium: OK
+                ( 0, uint256S("0xa4271888b5e60092c3e7183a76d454741e9a7a55f2b4afbe574615829e406bee"))  // <--Testcoin: OK
+                ( 6, uint256S("0x8618a815ad94f918a7d3d4df7ebc4df5f14da1ea25d0eb156b6a32f9621c2ce4")), // <--Testcoin: OK
+            1494590578,                                                                               // <--Testcoin: OK
+            7,                                                                                        // <--Testcoin: OK
+            1500                                                                                      // <--Testcoin: OK
         };
 
     }
@@ -278,11 +278,11 @@ public:
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x00");
 
-        pchMessageStart[0] = 0xfa;
-        pchMessageStart[1] = 0xbf;
-        pchMessageStart[2] = 0xb5;
-        pchMessageStart[3] = 0xda;
-        nDefaultPort = 31880;
+        pchMessageStart[0] = 0xaf;
+        pchMessageStart[1] = 0xfb;
+        pchMessageStart[2] = 0x5b;
+        pchMessageStart[3] = 0xad;
+        nDefaultPort = 31826;
         nPruneAfterHeight = 1000;
 
 
@@ -296,7 +296,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
-        vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
+//        vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
 
         fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = true;

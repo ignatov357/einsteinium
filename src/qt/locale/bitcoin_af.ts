@@ -158,8 +158,8 @@
         <translation>Besig met herindeksering van blokke op hardeskyf...</translation>
     </message>
     <message>
-        <source>Send coins to a Einsteinium address</source>
-        <translation>Stuur munte na 'n Einsteinium adres</translation>
+        <source>Send coins to a Testcoin address</source>
+        <translation>Stuur munte na 'n Testcoin adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -170,8 +170,8 @@
         <translation>Verander die wagwoord wat ek vir kodifikasie van my beursie gebruik</translation>
     </message>
     <message>
-        <source>Einsteinium</source>
-        <translation>Einsteinium</translation>
+        <source>Testcoin</source>
+        <translation>Testcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Kodifiseer die private sleutes wat aan jou beursie gekoppel is.</translation>
     </message>
     <message>
-        <source>Sign messages with your Einsteinium addresses to prove you own them</source>
-        <translation>Onderteken boodskappe met u Einsteinium adresse om u eienaarskap te bewys</translation>
+        <source>Sign messages with your Testcoin addresses to prove you own them</source>
+        <translation>Onderteken boodskappe met u Testcoin adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Einsteinium addresses</source>
-        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Einsteinium adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Testcoin addresses</source>
+        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Testcoin adresse</translation>
     </message>
     <message>
         <source>&amp;Help</source>
@@ -210,8 +210,8 @@
         <translation>Orebalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and einsteinium: URIs)</source>
-        <translation>Versoek betalings (genereer QR-kodes en einsteinium: URI's)</translation>
+        <source>Request payments (generates QR codes and testcoin: URIs)</source>
+        <translation>Versoek betalings (genereer QR-kodes en testcoin: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -222,8 +222,8 @@
         <translation>Vertoon die lys van gebruikte ontvangers-adresse en etikette</translation>
     </message>
     <message>
-        <source>Open a einsteinium: URI or payment request</source>
-        <translation>Skep 'n einsteinium: URI of betalingsversoek</translation>
+        <source>Open a testcoin: URI or payment request</source>
+        <translation>Skep 'n testcoin: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -710,8 +710,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Einsteinium Core</source>
-        <translation>Einsteinium Kern</translation>
+        <source>Testcoin Core</source>
+        <translation>Testcoin Kern</translation>
     </message>
     <message>
         <source>Information</source>

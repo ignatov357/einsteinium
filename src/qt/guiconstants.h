@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Einsteinium"
-#define QAPP_ORG_DOMAIN "emc2.foundation"
-#define QAPP_APP_NAME_DEFAULT "Einsteinium-Qt"
-#define QAPP_APP_NAME_TESTNET "Einsteinium-Qt-testnet"
+#define QAPP_ORG_NAME "Testcoin"
+#define QAPP_ORG_DOMAIN "tst.foundation"
+#define QAPP_APP_NAME_DEFAULT "Testcoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Testcoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

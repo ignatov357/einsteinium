@@ -114,8 +114,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Einsteinium</source>
-        <translation>Einsteinium</translation>
+        <source>Testcoin</source>
+        <translation>Testcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -490,8 +490,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Einsteinium Core</source>
-        <translation>Craidd Einsteinium</translation>
+        <source>Testcoin Core</source>
+        <translation>Craidd Testcoin</translation>
     </message>
     <message>
         <source>Information</source>

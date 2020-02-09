@@ -3,7 +3,7 @@ dist: trusty
 
 #workaround for https://github.com/travis-ci/travis-ci/issues/5227
 addons:
-  hostname: einsteinium-tester
+  hostname: testcoin-tester
 
 os: linux
 language: generic
@@ -71,7 +71,7 @@ script:
     - if [ "$RUN_TESTS" = "true" ]; then travis_wait 30 make $MAKEJOBS check VERBOSE=1; fi
     - if [ "$RUN_TESTS" = "true" ]; then travis_wait 30 qa/pull-tester/rpc-tests.py --coverage; fi
 
-    ->>> 0.13_master_EMC2
+    ->>> 0.13_master_TST
 after_script:
     - echo $TRAVIS_COMMIT_RANGE
     - echo $TRAVIS_COMMIT_LOG

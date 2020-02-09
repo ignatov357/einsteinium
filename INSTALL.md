@@ -1,5 +1,5 @@
-Building Einsteinium
+Building Testcoin
 ================
 
 See doc/build-*.md for instructions on building the various
-elements of the Einsteinium Core reference implementation of Einsteinium.
+elements of the Testcoin Core reference implementation of Testcoin.

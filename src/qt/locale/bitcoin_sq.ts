@@ -94,8 +94,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>Einsteinium</source>
-        <translation>Einsteinium</translation>
+        <source>Testcoin</source>
+        <translation>Testcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -438,8 +438,8 @@
         <translation>Opsionet:</translation>
     </message>
     <message>
-        <source>Einsteinium Core</source>
-        <translation>Berthama Einsteinium</translation>
+        <source>Testcoin Core</source>
+        <translation>Berthama Testcoin</translation>
     </message>
     <message>
         <source>Information</source>

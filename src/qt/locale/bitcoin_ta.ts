@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Einsteinium</source>
-        <translation>Einsteinium</translation>
+        <source>Testcoin</source>
+        <translation>Testcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -714,8 +714,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Einsteinium Core</source>
-        <translation>Einsteinium மையம்</translation>
+        <source>Testcoin Core</source>
+        <translation>Testcoin மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

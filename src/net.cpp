@@ -1409,7 +1409,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Einsteinium " + FormatFullVersion();
+        std::string strDesc = "Testcoin " + FormatFullVersion();
 
         try {
             while (true) {

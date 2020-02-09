@@ -153,7 +153,7 @@ unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader
                 PastBlocksMass++;
 
                 if (i == 1)        { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
-                else             //Einsteinium: workaround were to overcome the overflow issue when changing from CBigNum to arith_uint256
+                else             //Testcoin: workaround were to overcome the overflow issue when changing from CBigNum to arith_uint256
                                     if (arith_uint256().SetCompact(BlockReading->nBits) >= PastDifficultyAveragePrev)
                                     PastDifficultyAverage = ((arith_uint256().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev;
                                     else

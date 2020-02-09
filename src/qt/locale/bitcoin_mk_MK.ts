@@ -138,16 +138,16 @@
         <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
-        <source>Send coins to a Einsteinium address</source>
-        <translation>Испрати Einsteinium на Einsteinium адреса</translation>
+        <source>Send coins to a Testcoin address</source>
+        <translation>Испрати Testcoin на Testcoin адреса</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Потврди порака...</translation>
     </message>
     <message>
-        <source>Einsteinium</source>
-        <translation>Einsteinium</translation>
+        <source>Testcoin</source>
+        <translation>Testcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -600,8 +600,8 @@
         <translation>Опции:</translation>
     </message>
     <message>
-        <source>Einsteinium Core</source>
-        <translation>Einsteinium Core</translation>
+        <source>Testcoin Core</source>
+        <translation>Testcoin Core</translation>
     </message>
     <message>
         <source>Warning</source>

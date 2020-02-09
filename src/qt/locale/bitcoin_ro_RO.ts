@@ -154,8 +154,8 @@
         <translation>Se reindexează blocurile pe disc...</translation>
     </message>
     <message>
-        <source>Send coins to a Einsteinium address</source>
-        <translation>Trimite monede către o adresă Einsteinium</translation>
+        <source>Send coins to a Testcoin address</source>
+        <translation>Trimite monede către o adresă Testcoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -178,8 +178,8 @@
         <translation>&amp;Verifică mesaj...</translation>
     </message>
     <message>
-        <source>Einsteinium</source>
-        <translation>Einsteinium</translation>
+        <source>Testcoin</source>
+        <translation>Testcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -206,12 +206,12 @@
         <translation>Criptează cheile private ale portofelului dvs.</translation>
     </message>
     <message>
-        <source>Sign messages with your Einsteinium addresses to prove you own them</source>
-        <translation>Semnaţi mesaje cu adresa dvs. Einsteinium pentru a dovedi că vă aparţin</translation>
+        <source>Sign messages with your Testcoin addresses to prove you own them</source>
+        <translation>Semnaţi mesaje cu adresa dvs. Testcoin pentru a dovedi că vă aparţin</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Einsteinium addresses</source>
-        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Einsteinium specificată</translation>
+        <source>Verify messages to ensure they were signed with specified Testcoin addresses</source>
+        <translation>Verificaţi mesaje pentru a vă asigura că au fost semnate cu adresa Testcoin specificată</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -230,8 +230,8 @@
         <translation>Bara de unelte</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and einsteinium: URIs)</source>
-        <translation>Cereţi plăţi (generează coduri QR şi einsteinium-uri: URls)</translation>
+        <source>Request payments (generates QR codes and testcoin: URIs)</source>
+        <translation>Cereţi plăţi (generează coduri QR şi testcoin-uri: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -242,16 +242,16 @@
         <translation>Arată lista de adrese pentru primire şi etichetele</translation>
     </message>
     <message>
-        <source>Open a einsteinium: URI or payment request</source>
-        <translation>Deschidere einsteinium: o adresa URI sau o cerere de plată</translation>
+        <source>Open a testcoin: URI or payment request</source>
+        <translation>Deschidere testcoin: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Opţiuni linie de &amp;comandă</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Einsteinium network</source>
-        <translation><numerusform>%n conexiune activă către reţeaua Einsteinium</numerusform><numerusform>%n conexiuni active către reţeaua Einsteinium</numerusform><numerusform>%n de conexiuni active către reţeaua Einsteinium</numerusform></translation>
+        <source>%n active connection(s) to Testcoin network</source>
+        <translation><numerusform>%n conexiune activă către reţeaua Testcoin</numerusform><numerusform>%n conexiuni active către reţeaua Testcoin</numerusform><numerusform>%n de conexiuni active către reţeaua Testcoin</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -673,16 +673,16 @@
         <translation>Cheltuire rest neconfirmat</translation>
     </message>
     <message>
-        <source>Automatically open the Einsteinium client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat în router portul aferent clientului Einsteinium. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
+        <source>Automatically open the Testcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat în router portul aferent clientului Testcoin. Funcţionează doar dacă routerul duportă UPnP şi e activat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapare port folosind &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Einsteinium network through a SOCKS5 proxy.</source>
-        <translation>Conectare la reţeaua Einsteinium printr-un proxy SOCKS.</translation>
+        <source>Connect to the Testcoin network through a SOCKS5 proxy.</source>
+        <translation>Conectare la reţeaua Testcoin printr-un proxy SOCKS.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -742,7 +742,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de einsteinium.</translation>
+        <translation>Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de testcoin.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -782,7 +782,7 @@
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Adresa einsteinium pe care aţi specificat-o nu este validă.</translation>
+        <translation>Adresa testcoin pe care aţi specificat-o nu este validă.</translation>
     </message>
 </context>
 <context>
@@ -792,8 +792,8 @@
         <translation>Form</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Einsteinium network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Einsteinium după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Testcoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informaţiile afişate pot fi neactualizate. Portofelul dvs. se sincronizează automat cu reţeaua Testcoin după ce o conexiune este stabilită, dar acest proces nu a fost finalizat încă.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -885,8 +885,8 @@
         <translation>Cantitate</translation>
     </message>
     <message>
-        <source>Enter a Einsteinium address (e.g. %1)</source>
-        <translation>Introduceţi o adresă Einsteinium (de exemplu %1)</translation>
+        <source>Enter a Testcoin address (e.g. %1)</source>
+        <translation>Introduceţi o adresă Testcoin (de exemplu %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1178,8 +1178,8 @@
         <translation>R&amp;efoloseşte o adresă de primire (nu este recomandat)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Einsteinium network.</source>
-        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Einsteinium.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Testcoin network.</source>
+        <translation>Un mesaj opţional de ataşat la cererea de plată, care va fi afişat cînd cererea este deschisă. Notă: Acest mesaj nu va fi trimis cu plata către reţeaua Testcoin.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1402,8 +1402,8 @@
         <translation>Aceasta este o tranzacţie normală.</translation>
     </message>
     <message>
-        <source>The Einsteinium address to send the payment to</source>
-        <translation>Adresa einsteinium către care se face plata</translation>
+        <source>The Testcoin address to send the payment to</source>
+        <translation>Adresa testcoin către care se face plata</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1430,8 +1430,8 @@
         <translation>Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
-        <source>A message that was attached to the einsteinium: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Einsteinium network.</source>
-        <translation>un mesaj a fost ataşat la einsteinium: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua einsteinium.</translation>
+        <source>A message that was attached to the testcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Testcoin network.</source>
+        <translation>un mesaj a fost ataşat la testcoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua testcoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1467,7 +1467,7 @@
         <translation>&amp;Semnează mesaj</translation>
     </message>
     <message>
-        <source>The Einsteinium address to sign the message with</source>
+        <source>The Testcoin address to sign the message with</source>
         <translation>Adresa cu care semnaţi mesajul</translation>
     </message>
     <message>
@@ -1499,8 +1499,8 @@
         <translation>Copiază semnatura curentă în clipboard-ul sistemului</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Einsteinium address</source>
-        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Einsteinium</translation>
+        <source>Sign the message to prove you own this Testcoin address</source>
+        <translation>Semnează mesajul pentru a dovedi ca deţineţi acestă adresă Testcoin</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1519,12 +1519,12 @@
         <translation>&amp;Verifică mesaj</translation>
     </message>
     <message>
-        <source>The Einsteinium address the message was signed with</source>
-        <translation>Introduceţi o adresă Einsteinium</translation>
+        <source>The Testcoin address the message was signed with</source>
+        <translation>Introduceţi o adresă Testcoin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Einsteinium address</source>
-        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Einsteinium specificată</translation>
+        <source>Verify the message to ensure it was signed with the specified Testcoin address</source>
+        <translation>Verificaţi mesajul pentru a vă asigura că a fost semnat cu adresa Testcoin specificată</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1612,8 +1612,8 @@
         <translation>Acceptă conexiuni din afară (implicit: 1 dacă nu se foloseşte -proxy sau -connect)</translation>
     </message>
     <message>
-        <source>Einsteinium Core</source>
-        <translation>Nucleul Einsteinium</translation>
+        <source>Testcoin Core</source>
+        <translation>Nucleul Testcoin</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

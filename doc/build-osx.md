@@ -20,17 +20,17 @@ Dependencies
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Einsteinium Core
+Build Testcoin Core
 ------------------------
 
-1. Clone the einsteinium source code and cd into `einsteinium`
+1. Clone the testcoin source code and cd into `testcoin`
 
-        git clone https://github.com/einsteinium-project/einsteinium
-        cd einsteinium
+        git clone https://github.com/testcoin-project/testcoin
+        cd testcoin
 
-2.  Build einsteinium-core:
+2.  Build testcoin-core:
 
-    Configure and build the headless einsteinium binaries as well as the GUI (if Qt is found).
+    Configure and build the headless testcoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -49,37 +49,37 @@ Build Einsteinium Core
 Running
 -------
 
-Einsteinium Core is now available at `./src/einsteiniumd`
+Testcoin Core is now available at `./src/testcoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=einsteiniumrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Einsteinium/einsteinium.conf"
+    echo -e "rpcuser=testcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Testcoin/testcoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Einsteinium/einsteinium.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Testcoin/testcoin.conf"
 
-The first time you run einsteiniumd, it will start downloading the blockchain. This process could take several hours.
+The first time you run testcoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Einsteinium/debug.log
+    tail -f $HOME/Library/Application\ Support/Testcoin/debug.log
 
 Other commands:
 -------
 
-    ./src/einsteiniumd -daemon # Starts the einsteinium daemon.
-    ./src/einsteinium-cli --help # Outputs a list of command-line options.
-    ./src/einsteinium-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/testcoind -daemon # Starts the testcoin daemon.
+    ./src/testcoin-cli --help # Outputs a list of command-line options.
+    ./src/testcoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for einsteinium development.
+You can use Qt Creator as an IDE, for testcoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "einsteinium-qt" as project name, enter src/qt as location
+4. Enter "testcoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

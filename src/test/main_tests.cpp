@@ -12,7 +12,7 @@
 
 BOOST_FIXTURE_TEST_SUITE(main_tests, TestingSetup)
 
-/* PM-Tech: EMC2 Specifications, create our own test
+/* PM-Tech: TST Specifications, create our own test
 static void TestBlockSubsidyHalvings(const Consensus::Params& consensusParams)
 {
     int maxHalvings = 11;
@@ -48,7 +48,7 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
 {
     const Consensus::Params& consensusParams = Params(CBaseChainParams::MAIN).GetConsensus();
     CAmount nSum = 0;
-    for (int nHeight = 0; nHeight <= 26500000; nHeight += 1) { // For Einsteinium we have to check all, maybe a little more,this takes a while
+    for (int nHeight = 0; nHeight <= 26500000; nHeight += 1) { // For Testcoin we have to check all, maybe a little more,this takes a while
         CAmount nSubsidy = GetBlockSubsidy(nHeight, consensusParams);
         if (nHeight>1) {
             BOOST_CHECK(nSubsidy <= 2973 * COIN);
