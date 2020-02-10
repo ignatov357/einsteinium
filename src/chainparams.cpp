@@ -108,13 +108,13 @@ public:
         nDefaultPort = 41826;       // <--Testcoin: OK
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock("NY Times 19/Feb/2014 North Korea Arrests Christian Missionary From Australia", CScript() << OP_DUP << OP_HASH160 << ParseHex("1cec44c9f9b769ae08ebf9d694c7611a16edf615") << OP_EQUALVERIFY << OP_CHECKSIG, 1392841423, 3236648, 0x1e0ffff0, 1, 50 * COIN); // <--Testcoin: OK
+        genesis = CreateGenesisBlock("Climate change: Why are US senators wearing this symbol?", CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG, 1581287287, 3454368, 0x1e0ffff0, 1, 50 * COIN); // <--Testcoin: OK
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x4e56204bb7b8ac06f860ff1c845f03f984303b5b97eb7b42868f714611aed94b")); // <--Testcoin: OK
-        assert(genesis.hashMerkleRoot == uint256S("0xb3e47e8776012ee4352acf603e6b9df005445dcba85c606697f422be3cc26f9b")); // <--Testcoin: OK
+        assert(consensus.hashGenesisBlock == uint256S("d2b8f8aec910b2e1835ef7193ac2db2e9442e11192edadeed035ffd44a065059")); // <--Testcoin: OK
+        assert(genesis.hashMerkleRoot == uint256S("1b058f671e47f24b2467c0351ed08e2338b3d4d8475499d92a6dc666a35c58a2")); // <--Testcoin: OK
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-//        vSeeds.push_back(CDNSSeedData("tst.foundation", "dnsseeder01.tst.foundation")); // <--Testcoin: OK
+//        /vSeeds.push_back(CDNSSeedData("tst.foundation", "dnsseeder01.tst.foundation")); // <--Testcoin: OK
 //        vSeeds.push_back(CDNSSeedData("tst.foundation", "dnsseeder02.tst.foundation")); // <--Testcoin: OK
 //        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed01.chainworksindustries.com")); // <--Testcoin: OK
 //        vSeeds.push_back(CDNSSeedData("chainworksindustries.com", "tst-seed02.chainworksindustries.com")); // <--Testcoin: OK
